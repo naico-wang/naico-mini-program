@@ -1,23 +1,28 @@
 import { defineConfig, type UserConfigExport } from '@tarojs/cli'
-import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
+import path from 'path'
 import devConfig from './dev'
 import prodConfig from './prod'
 
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
-export default defineConfig<'vite'>(async (merge, { command, mode }) => {
+export default defineConfig<'vite'>(async (merge) => {
   const baseConfig: UserConfigExport<'vite'> = {
     projectName: 'naico-mini-program',
     date: '2024-8-4',
-    designWidth: 750,
+    designWidth: 375,
     deviceRatio: {
+      375: 2,
       640: 2.34 / 2,
       750: 1,
-      375: 2,
       828: 1.81 / 2
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
     plugins: [],
+    alias: {
+       "@": path.resolve(__dirname,"..", "src"),
+       "@/assets": path.resolve(__dirname,"..", "src/assets"),
+       "@/components": path.resolve(__dirname,"..", "src/components")
+    },
     defineConstants: {
     },
     copy: {

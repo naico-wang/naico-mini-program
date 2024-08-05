@@ -1,15 +1,21 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
+import { View } from '@tarojs/components'
+import { useState } from 'react'
+
+import EnContent from '@/components/en'
+import CnContent from '@/components/cn'
+
 import './index.less'
 
 export default function Index () {
-  useLoad(() => {
-    console.log('Page loaded.')
-  })
-
+  const [ showEnVersion, setShowEnVersion ] = useState<boolean>(false)
+  const onButtonClick = () => {
+    setShowEnVersion(!showEnVersion)
+  }
   return (
-    <View className='index'>
-      <Text>Hello world!</Text>
+    <View className='page-container'>
+      <View className='float-button' onClick={onButtonClick}>{ showEnVersion ? '中文' : '英文'}</View>
+      { showEnVersion ? <EnContent /> : <CnContent /> }
+      <EnContent />
     </View>
   )
 }
