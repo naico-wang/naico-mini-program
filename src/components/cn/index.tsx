@@ -1,11 +1,10 @@
-import { Text, View, Image } from '@tarojs/components';
-import Avatar from '@/assets/website-logo-full.png'
+import { Text, View } from '@tarojs/components';
 
 const Index = () => {
   return (
     <>
       <View className='basic-info'>
-        <Image className='avatar' mode='widthFix' src={Avatar} />
+        <View className='avatar' />
         <View className='info'>
           <View className='name'>王宏宇 - Naico Wang</View>
           <View className='role'>全栈开发 / 研发经理 / PMP</View>

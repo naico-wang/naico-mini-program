@@ -20,7 +20,6 @@ export default defineConfig<'vite'>(async (merge) => {
     plugins: [],
     alias: {
        "@": path.resolve(__dirname,"..", "src"),
-       "@/assets": path.resolve(__dirname,"..", "src/assets"),
        "@/components": path.resolve(__dirname,"..", "src/components")
     },
     defineConstants: {
