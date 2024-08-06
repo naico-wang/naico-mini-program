@@ -2,9 +2,9 @@ name: 上传微信小程序
 
 on:
   push:
-    branches: [ master ]
+    branches: [ release ]
   pull_request:
-    branches: [ master ]
+    branches: [ release ]
 
 jobs:
   build:
