@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0b46218-56e4-4a1a-bb97-f91334609c86" name="Changes" comment="feat(image): convert image to base64 background">
-      <change afterPath="$PROJECT_DIR$/src/images/icon-home-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon-home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon-me-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon-me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about/index.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about/index.tsx" afterDir="false" />
+    <list default="true" id="d0b46218-56e4-4a1a-bb97-f91334609c86" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/upload.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +24,7 @@
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -122,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722848375248</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(tabbar): add tabbar">
+      <option name="closed" value="true" />
+      <created>1722932779482</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722932779482</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +130,8 @@
     <MESSAGE value="feat(init): init miniprogram use vue-mini" />
     <MESSAGE value="feat(init): init miniprogram" />
     <MESSAGE value="fix(image): convert image to base64 background" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(image): convert image to base64 background" />
+    <MESSAGE value="feat(image): convert image to base64 background" />
+    <MESSAGE value="feat(tabbar): add tabbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(tabbar): add tabbar" />
   </component>
 </project>

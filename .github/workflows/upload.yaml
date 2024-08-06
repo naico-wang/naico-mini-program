@@ -1,0 +1,41 @@
+name: 上传微信小程序
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # 或 pnpm / yarn
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build weapp
+        run: npm run build:weapp
+
+      # 从 secrets.UPLOAD_PRIVATE_KEY 生成私钥文件
+      # see Project/Settings/Secrets
+      - name: Generate private key for upload
+        run: echo "$PRIVATE_KEY" > private.key
+        env:
+          UPLOAD_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      # 上传代码
+      - name: Upload to WeChat
+        run: npx mp-ci upload ./ --pkp=./private.key --no-test

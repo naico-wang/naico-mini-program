@@ -5,6 +5,5 @@ deploy_versions/
 node_modules/
 .DS_Store
 .swc
-.idea/
-.vscode/
-!/.idea/
+.idea
+.vscode
