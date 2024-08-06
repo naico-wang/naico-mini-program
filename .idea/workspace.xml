@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b46218-56e4-4a1a-bb97-f91334609c86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/upload.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/upload.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722933806662</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(ci): add ci">
+      <option name="closed" value="true" />
+      <created>1722933951982</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722933951982</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
