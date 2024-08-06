@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0b46218-56e4-4a1a-bb97-f91334609c86" name="Changes" comment="">
+    <list default="true" id="d0b46218-56e4-4a1a-bb97-f91334609c86" name="Changes" comment="feat(image): convert image to base64 background">
+      <change afterPath="$PROJECT_DIR$/src/images/icon-home-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon-me-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon-me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/about/index.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/about/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/about/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/website-logo-full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cn/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/en/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/en/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/nwang020/Documents/SourceCode/Personal/naico-mini-program/src/assets",
+    "last_opened_file_path": "/Users/nwang020/Documents/SourceCode/Personal/naico-mini-program/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,6 +59,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -105,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722848100914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix(image): convert image to base64 background">
+      <option name="closed" value="true" />
+      <created>1722848375248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722848375248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(init): init miniprogram use vue-mini" />
     <MESSAGE value="feat(init): init miniprogram" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(init): init miniprogram" />
+    <MESSAGE value="fix(image): convert image to base64 background" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(image): convert image to base64 background" />
   </component>
 </project>
