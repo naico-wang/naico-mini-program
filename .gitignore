@@ -5,5 +5,7 @@ deploy_versions/
 node_modules/
 .DS_Store
 .swc
-.idea
-.vscode
+*.local
+.qoder/
+*.idea/
+

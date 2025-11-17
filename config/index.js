@@ -1,27 +1,25 @@
-import { defineConfig, type UserConfigExport } from '@tarojs/cli'
-import path from 'path'
+import { defineConfig } from '@tarojs/cli'
+
 import devConfig from './dev'
 import prodConfig from './prod'
 
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
-export default defineConfig<'vite'>(async (merge) => {
-  const baseConfig: UserConfigExport<'vite'> = {
-    projectName: 'naico-mini-program',
-    date: '2024-8-4',
-    designWidth: 375,
+export default defineConfig(async (merge, { command, mode }) => {
+  const baseConfig = {
+    projectName: 'test',
+    date: '2025-11-17',
+    designWidth: 750,
     deviceRatio: {
-      375: 2,
       640: 2.34 / 2,
       750: 1,
+      375: 2,
       828: 1.81 / 2
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
-    plugins: [],
-    alias: {
-       "@": path.resolve(__dirname,"..", "src"),
-       "@/components": path.resolve(__dirname,"..", "src/components")
-    },
+    plugins: [
+      "@tarojs/plugin-generator"
+    ],
     defineConstants: {
     },
     copy: {
@@ -70,7 +68,7 @@ export default defineConfig<'vite'>(async (merge) => {
             generateScopedName: '[name]__[local]___[hash:base64:5]'
           }
         }
-      },
+      }
     },
     rn: {
       appName: 'taroDemo',
@@ -81,6 +79,9 @@ export default defineConfig<'vite'>(async (merge) => {
       }
     }
   }
+
+  process.env.BROWSERSLIST_ENV = process.env.NODE_ENV
+
   if (process.env.NODE_ENV === 'development') {
     // 本地开发构建配置（不混淆压缩）
     return merge({}, baseConfig, devConfig)

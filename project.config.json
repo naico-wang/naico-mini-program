@@ -1,7 +1,7 @@
 {
-  "miniprogramRoot": "dist/",
-  "projectname": "naico-mini-program",
-  "description": "https://naico.wang",
+  "miniprogramRoot": "./dist",
+  "projectname": "Naico WMP",
+  "description": "naico-mini-program",
   "appid": "wx00b2480d67a90d90",
   "setting": {
     "urlCheck": true,
@@ -9,24 +9,7 @@
     "enhance": false,
     "compileHotReLoad": false,
     "postcss": false,
-    "minified": false,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "ignoreUploadUnusedFiles": true
+    "minified": false
   },
-  "compileType": "miniprogram",
-  "libVersion": "development",
-  "srcMiniprogramRoot": "dist/",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "condition": {},
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
-  }
+  "compileType": "miniprogram"
 }

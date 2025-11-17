@@ -1,1 +1,0 @@
-# naico-mini-program
